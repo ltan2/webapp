@@ -7,7 +7,7 @@ from scipy import interpolate
 from periodic import findReducedMass #Import findReducedMass function from periodic.py file
 import os
 from scipy.optimize import curve_fit
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 def calcKE(nBasis, reduced_mass, deltasq,h_mat):
