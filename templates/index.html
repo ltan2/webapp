@@ -1,9 +1,18 @@
 <html>
    <body>
-      <form action = "http://localhost:5000/login" method = "post">
-         <p>Enter Name:</p>
-         <p><input type = "text" name = "name" /></p>
+      <form action = "http://localhost:5000" method = "post" enctype = "multipart/form-data">
+         <p>Enter First Element:</p>
+         <p><input type = "text" name = "firstEl" /></p>
+         <p>Enter Second Element:</p>
+         <p><input type = "text" name = "secondEl" /></p>
+         <p>Enter Number of basis function Element:</p>
+         <p><input type = "number" name = "basisF" /></p>
+         <p>Upload your file :</p>
+          <input type = "file" name = "file" />
          <p><input type = "submit" value = "submit" /></p>
       </form>   
+    
+      
+
    </body>
 </html>
