@@ -13,15 +13,17 @@ def success():
 @app.route('/',methods = ['POST', 'GET'])
 def login():
 	if request.method == 'POST':
-		felement = request.form['firstEl']
-		selement = request.form['secondEl']
+		felement = request.form['dropdown1']
+		selement = request.form['dropdown2']
 		basisF = request.form['basisF']
 		#filename = request.form['filename']
 		filename = request.files['file'].filename
 		f = request.files['file']
      		#read file
 		lines = f.readlines();
-		#print(lines)
+		num_lines = sum(1 for line in lines)
+		if(num_lines != basisF):
+			return render_template('failure.html',message = "The number of basis function entered does not match the number of lines in your file.Please try again")
      		#initialize variables
 		r_vals = []
 		int_count = 0  
