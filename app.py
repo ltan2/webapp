@@ -11,8 +11,8 @@ def success():
 	
 @app.route("/index")
 def try():
-	return render_template('index.html')
-
+	#return render_template('index.html')
+	return 'HELLO WORLD'
 
 @app.route('/calculate',methods = ['POST'])
 def login():
