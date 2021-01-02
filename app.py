@@ -5,8 +5,12 @@ from SEMV2 import main_func
 import numpy as np
 app = Flask(__name__)
 
-@app.route("/index")
+@app.route("/")
 def success():
+	return render_template('index.html')
+	
+@app.route("/index")
+def try():
 	return render_template('index.html')
 
 
