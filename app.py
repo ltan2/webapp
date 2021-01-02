@@ -26,6 +26,7 @@ def login():
 		lines = f.readlines();
 		num_lines = sum(1 for line in lines)
 		if(num_lines != basisF):
+			print(num_lines)
 			return render_template('failure.html',message = "The number of basis function entered does not match the number of lines in your file.Please try again")
      		#initialize variables
 		r_vals = []
