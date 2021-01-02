@@ -10,7 +10,7 @@ def success():
 	return render_template('index.html')
 
 
-@app.route('/',methods = ['POST'])
+@app.route('/calculate',methods = ['POST'])
 def login():
 	if request.method == 'POST':
 		felement = request.form['dropdown1']
