@@ -10,7 +10,7 @@ def success():
 	return render_template('index.html')
 	
 @app.route("/index")
-def try():
+def tryagain():
 	#return render_template('index.html')
 	return 'HELLO WORLD'
 
