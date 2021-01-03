@@ -1,0 +1,23 @@
+select.dropdown {
+    appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 1ex;
+    background-origin: content-box;
+    background-color:rgb(255,255,0)
+}
+
+.form-group{
+background-color:rgb(255,255,0)
+}
+
+.basis{
+width: 50px;
+height: 20px
+}
+
+.upload{
+width: 20px;
+height:10px;
+background-color:"yellow"
+}

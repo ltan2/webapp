@@ -19,21 +19,24 @@ def login():
 		felement = request.form['dropdown1']
 		selement = request.form['dropdown2']
 		basisF = request.form['basisF']
+		if(basisF == ''):
+			return render_template('failure.html',message ="You forgot to enter number of basis function")	
 		#filename = request.form['filename']
 		filename = request.files['file'].filename
+		if(filename == ''):
+			return render_template('failure.html',message ="You forgot to attach a file")	
 		f = request.files['file']
      		#read file
 		lines = f.readlines();
 		num_lines = sum(1 for line in lines)
-		if(num_lines != basisF):
-			print(num_lines)
-			return render_template('failure.html',message = "The number of basis function entered does not match the number of lines in your file.Please try again")
      		#initialize variables
 		r_vals = []
 		int_count = 0  
 		last_val =0
 		nBasis = int(basisF)
-		
+		if(num_lines != nBasis):
+			print(num_lines)
+			return render_template('failure.html',message = "The number of basis function entered does not match the number of lines in your file.Please try again")
 		h_mat = np.full((nBasis,nBasis),0.0)
 		for line in lines:
 			line = line.decode()
