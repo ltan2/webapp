@@ -1,23 +1,24 @@
-select.dropdown {
-    appearance: none;
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: 1ex;
-    background-origin: content-box;
-    background-color:rgb(255,255,0)
+.dropdown {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-position: right center;
+  background-size: 1ex
 }
 
 .form-group{
-background-color:rgb(255,255,0)
+
 }
 
 .basis{
-width: 50px;
-height: 20px
+  width: 140px;
+  height: 30px
 }
 
 .upload{
-width: 20px;
-height:10px;
-background-color:"yellow"
+  width: 200px;
+  height:40px;
+  background-color:"yellow"
 }

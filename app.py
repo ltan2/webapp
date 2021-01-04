@@ -3,11 +3,12 @@ from flask import render_template
 from SEMV2 import main_func
 #from werkzeug import secure_filename
 import numpy as np
+import random
 app = Flask(__name__)
 
 @app.route("/")
 def success():
-	return render_template('index.html')
+	return render_template('index.html',param = random.seed())
 	
 @app.route("/index")
 def tryagain():
