@@ -6,7 +6,8 @@ centrifugal distortion constant all in cm-1. The website is : https://pchem13.he
 ## To run the website:
 You will need Flask python 3 and gunicorn installed. Later to run, type: python3 app.py
 
-## The website calculates the constants for diatomic molecules and requires a file in a .txt format with the internuclear distance on the left in angstroms and eneergies on thr right in atomuc units
+## Additional details for Input:
+The website calculates the constants for diatomic molecules and requires a file in a .txt format with the internuclear distance on the left in angstroms and eneergies on thr right in atomuc units and also number of basis sets
 
 ## Support:
 You can contact me for any failures or problems with the site
