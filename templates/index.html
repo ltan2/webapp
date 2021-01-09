@@ -1,6 +1,6 @@
 <html>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- <link rel ="stylesheets" href= "{{ url_for('static', filename='styles/styles.css') + '?param' }}">
+ <link rel ="stylesheets" href= "{{ url_for('static', filename='styles/styles.css') + '?paa' }}">
    <body>
       <form action = "/calculate" method = "post" enctype = "multipart/form-data">
       <div class = "form-group">
@@ -64,9 +64,13 @@
          <p><input type = "number" class="basis" name = "basisF" /></p>
          <p>Upload your file :</p>
           <input type = "file" class= "upload" name = "file" />
-         <p><input type = "submit" value = "submit" /></p>
+         <p><input type = "submit" value = "submit" onclick = "loading();"/></p>
         </div>
       </form>   
+      <script>
+      function loading(){
+      document.getElementById("demo").innerHTML = "LOADING";
+      }
     
       
 
